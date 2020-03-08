@@ -105,3 +105,9 @@ venv.bak/
 
 # PyCharm
 .idea/
+
+# dataset dirs
+*/dataset/*
+
+# datasets / submissions
+*.csv
