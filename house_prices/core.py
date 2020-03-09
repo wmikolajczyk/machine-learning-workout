@@ -1,9 +1,9 @@
 import io
 import os
-import requests
 from http import HTTPStatus
 from zipfile import ZipFile
 
+import requests
 
 DATASET_DIR = "dataset"
 
@@ -15,4 +15,4 @@ def get_data(url, dataset_dir=DATASET_DIR):
     # use in memory bytes stream
     f = io.BytesIO(response.content)
     with ZipFile(f, 'r') as zipObj:
-    	zipObj.extractall(path=dataset_dir)
+        zipObj.extractall(path=dataset_dir)
